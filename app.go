@@ -48,7 +48,7 @@ func main() {
 	log.Printf("notionbackup (v%s) | Starting the export process ...\n", version)
 
 	startTime := time.Now()
-	exportURL, err := app.exportPageURL(true)
+	exportURL, err := app.exportPageURL(false)
 	if err != nil {
 		log.Fatal(err)
 	}
